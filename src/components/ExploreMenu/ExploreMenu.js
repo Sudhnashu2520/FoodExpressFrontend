@@ -1,6 +1,6 @@
 import React,{useState,useRef} from 'react'
 import './ExploreMenu.css'
-import { NavItem } from 'react-bootstrap'
+
 
 const ExploreMenu = ({category,setCategory}) => {
   const menu=[
@@ -63,8 +63,8 @@ const ExploreMenu = ({category,setCategory}) => {
         <div className='container d-flex  justify-content-between'>
         <h1>Explore our menu</h1>
         <div className="d-flex action-btns"> 
-        <button className='fas fa-angle-left' onClick={() => handleScroll(-200)} >left</button>
-        <button onClick={() => handleScroll(200)}>right</button>
+        <button className='fas fa-angle-left' onClick={() => handleScroll(-200)} ><img src={require('../../assets/left-arrow.png')} /></button>
+        <button onClick={() => handleScroll(200)}><img src={require('../../assets/right-arrow.png')} /></button>
       </div>
         </div>
       
