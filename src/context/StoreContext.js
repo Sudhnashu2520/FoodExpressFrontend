@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
-    const url = "https://foodexpressbackend-k8u1.onrender.com"
+    const url = "http://foodexpressbackend-k8u1.onrender.com"
     const [food_list, setFoodList] = useState([]);
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState("")
@@ -48,7 +48,7 @@ const StoreContextProvider = (props) => {
     }
 
     const fetchFoodList = async () => {
-        console.log(url);
+        console.log("ADFSrgfsref",url);
         
         const response = await axios.get(url + "/api/food/list");
         console.log("Food list" + response)
